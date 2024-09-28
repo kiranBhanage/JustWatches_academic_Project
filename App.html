@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link href="{{ url_for('static', filename='CustStyle(cust).css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script defer src="path/to/script.js"></script>
+</head>
+<body class="main" > 
+<div class="header">
+    <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">JUST WATCHES</h2>
+            </div>
+            <div class="active" style="width:850px">
+                <ul>
+                    <li><a href="{{ url_for('App') }}"><i class="fa fa-home"> HOME</i></a></li>
+                    <li><a href="{{ url_for('Categories') }}"><i class="fa fa-mobile"> CATEGORIES</i></a></li>
+                    <li><a href="{{ url_for('Cart') }}"><i class="fa fa-shopping-cart"> CART</i></a></li>
+                    <li><a href="#"><i class="fa fa-user" width="100px"> MORE</i></a>
+                        <div class="sub-menu">
+                            <ul>	 
+                             <li style="width:150px"><a href="{{ url_for('Profile') }}">MY PROFILE</a></li>
+                             <li style="width:150px"><a href="{{ url_for('Home') }}"><i class="fa fa-sign-out"> SIGN OUT</i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div><br>
+    </div> 
+      <form class="container">
+        <div class="row">
+                <div class="col-2">
+                    <h1>ELEVATE UR STYLE!!!</h1>
+                    <p>Everyone looks at your watch and it<br> 
+                      represents who you are and your personal style.<br>
+                       <b>Use ur Time Wisely</b><br>
+                       <span style="padding-left:210px"><span>
+                    </P>
+                    <a href="{{ url_for('Categories') }}">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="{{ url_for('static', filename='images/m1.jpeg') }}">
+                </div>
+        </div>
+    </form>
+</div>
+<form class="categories">
+    <div class="row">
+        <div class="col-3">
+            <img src="{{ url_for('static', filename='images/HOME18.jpg') }}">
+        </div>
+        <div class="col-3">
+            <img src="{{ url_for('static', filename='images/HOME20.jpg') }}">
+        </div>
+        <div class="col-3">
+            <img src="{{ url_for('static', filename='images/HOME23.jpg') }}">
+        </div>
+        <div class="col-3">
+            <img src="{{ url_for('static', filename='images/HOME19.jpg') }}">
+        </div>
+    </div>
+</form>
+<form class="categories">
+    <h2>Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href="{{ url_for('Categories') }}"><img src="{{ url_for('static', filename='images/t1.jpg') }}">
+            <h4>Titan Browm Dial Analog Watch For Men</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.2,950</p></a>
+        </div>
+        <div class="col-4">
+            <a href="{{ url_for('Categories') }}"><img src="{{ url_for('static', filename='images/t5.jpg') }}">
+            <h4>Titan Octane Analog Silver Dial Men's Watch</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.3,445</p></a>
+        </div>
+        <div class="col-4">
+            <a href="{{ url_for('Categories') }}"><img src="{{ url_for('static', filename='images/t3.jpg') }}">
+            <h4>Titan Black Dial Analog Watch For Men</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>Rs.1,955</p></a>
+        </div>
+        <div class="col-4">
+            <a href="{{ url_for('Categories') }}"><img src="{{ url_for('static', filename='images/t6.jpg') }}">
+            <h4>Titan Analog OffWhite Dial Men's Watch</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.1,995</p></a>
+        </div>
+    </div>
+</form>
+<form class="categories">
+    <h2>Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href="{{ url_for('Categories') }}"><img src="{{ url_for('static', filename='images/b3.jpg') }}">
+            <h4>Citizen Analog Black Dial Men's Watch</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.8,990</p></a>
+        </div>
+        <div class="col-4">
+            <a href="{{ url_for('Categories') }}"><img src="{{ url_for('static', filename='images/b4.jpg') }}">
+            <h4>Citizen Analog Yellow Dial Men's Watch</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.5,449</p></a>
+        </div>
+        <div class="col-4">
+            <a href="{{ url_for('Categories') }}"><img src="{{ url_for('static', filename='images/b5.jpg') }}">
+            <h4>Citizen Analog Blue Dial Men's Watch</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.5,299</p></a>
+        </div>
+        <div class="col-4">
+            <a href="{{ url_for('Categories') }}"><img src="{{ url_for('static', filename='images/b9.jpg') }}">
+            <h4>Citizen Analog White Dial Men's Watch</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.9,999</p></a>
+        </div>
+    </div>
+</form>
+
+<div class="offer">
+    <form class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="{{ url_for('static', filename='images/x1.jpg') }}"></a>
+            </div>
+            <div class="col-2">
+                <p style="font-size:20px"> Exclusively Available On JUST WATCHES</p>
+                <h1>Titan Latest Collections</h1>
+                <small>
+                   Titan's one of the best collections ,available price is under Rs 6,499in india with different color options and variety.... <br>
+                    Check latest offer and discount on Titan From JUST WATCHES. <br>
+                    Buy Titan watch just for <b>Rs.1,999</b> only...
+                </small><br>
+                <a href="{{ url_for('Categories') }}">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<form class="categories">
+    <h2>Women's Collections</h2>
+    <div class="row">
+        <div class="col-4" >
+            <a href="{{ url_for('Categories') }}"><img src="{{ url_for('static', filename='images/z1.jpg') }}">
+            <h4>Titan Blue Dial Analog Watch For Women</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.1,970</p></a>
+        </div>
+        <div class="col-4">
+            <a href="{{ url_for('Categories') }}"><img src="{{ url_for('static', filename='images/z3.jpg') }}">
+            <h4>Titan Brown Dial Analog Watch for Women</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.1,995</p></a>
+        </div>
+        <div class="col-4">
+            <a href="{{ url_for('Categories') }}"><img src="{{ url_for('static', filename='images/z4.jpg') }}">
+            <h4>Titan Ladies Neo-Ii Analog Black Dial Women's Watch</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>Rs.1,955</p></a>
+        </div>
+        <div class="col-4">
+            <a href="{{ url_for('Categories') }}"><img src="{{ url_for('static', filename='images/z5.jpg') }}">
+            <h4>Tiatn Ladies Neo-Ii Analog Rose Gold Women's Watch</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>Rs.2,995</p></a>
+        </div>
+    </div>
+</form>
+
+<!--Feedback-->
+<form name="feedback" action="/feedback" method="Post" class="form2">
+    <div class="title">
+      <h2>FEEDBACK</h2>
+    </div>
+    <div class="half">
+      <div class="item">
+        <label for="name">NAME:</label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div class="item">
+        <label for="email">EMAIL:</label>
+        <input type="text" name="email" id="email" required>
+      </div>
+    </div>
+    <div class="full">
+      <label for="message">REVIEW:</label>
+      <textarea name="message" id="message" required></textarea>
+    </div>
+    <div class="action">
+      <input type="submit" value = "POST" >
+      <input type="reset" value = "RESET">
+    </div>
+    <div class="icons">
+      <a href="" class = "fa fa-twitter"></a>
+      <a href="" class = "fa fa-facebook"></a>
+      <a href="" class = "fa fa-instagram"></a>
+      <a href="" class = "fa fa-github"></a>
+    </div>
+  </form>
+
+<footer class="header" style="border-radius:25px 25px 0 0;">
+    <div class="container" style="margin:20px;">
+     <div class="row">
+        <div class="col-2">
+            <h3>Contact Us</h3>
+            <p>Email: Omsurana55@gmail.com</p>
+            <p>Mobile: +91 7900147173</p>
+            <p>Address: Om Watch Store , Diva east Thane-400612</p>
+        </div>
+        <div class="col-2">
+         <div class="icon">
+            <h2 class="logo">JUST WATCHES</h2>
+         </div>
+        </div>
+     </div>
+    </div>
+</footer>
+</body>
+</html>
